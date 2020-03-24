@@ -98,20 +98,51 @@ import UIKit
 
 //if else
 
-var preco: Int
-var resultado: String
+//var preco: Int
+//var resultado: String
+//
+//preco = 500
+//resultado = "Nenhuma categoria"
+//
+//if preco >= 100 && preco <= 200 {
+//    resultado = "Carros populares"
+//} else if (preco > 200 && preco <= 300){
+//    resultado = "Carros médios"
+//}else if (preco > 300 && preco <= 400) {
+//    resultado = "Carros luxuosos"
+//} else {
+//    resultado = "Eike batista"
+//}
+//
+//print(resultado)
 
-preco = 500
-resultado = "Nenhuma categoria"
+// loops - for
+//for var i in 0..<=5 {
+//    print("Número: \(i)")
+//}
 
-if preco >= 100 && preco <= 200 {
-    resultado = "Carros populares"
-} else if (preco > 200 && preco <= 300){
-    resultado = "Carros médios"
-}else if (preco > 300 && preco <= 400) {
-    resultado = "Carros luxuosos"
-} else {
-    resultado = "Eike batista"
-}
+//var comentarios: [String] = []
+//comentarios.append("Gostei da foto...muito legal")
+//comentarios.append("Ficou muito bonita nessa foto")
+//comentarios.append("Que legal sua viagem")
+//
+//for var comentario in comentarios {
+//    print(comentario)
+//}
+//
+//var contador = 0
+//
+//while contador < 6 {
+//    print(contador)
+//    contador += 1
+//}
 
-print(resultado)
+//var contador = 0
+//
+//repeat {
+//
+//    print(contador)
+//
+//    contador += 1
+//
+//}while contador < 6
