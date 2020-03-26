@@ -98,20 +98,169 @@ import UIKit
 
 //if else
 
-var preco: Int
-var resultado: String
+//var preco: Int
+//var resultado: String
+//
+//preco = 500
+//resultado = "Nenhuma categoria"
+//
+//if preco >= 100 && preco <= 200 {
+//    resultado = "Carros populares"
+//} else if (preco > 200 && preco <= 300){
+//    resultado = "Carros médios"
+//}else if (preco > 300 && preco <= 400) {
+//    resultado = "Carros luxuosos"
+//} else {
+//    resultado = "Eike batista"
+//}
+//
+//print(resultado)
 
-preco = 500
-resultado = "Nenhuma categoria"
+// loops - for
+//for var i in 0..<=5 {
+//    print("Número: \(i)")
+//}
 
-if preco >= 100 && preco <= 200 {
-    resultado = "Carros populares"
-} else if (preco > 200 && preco <= 300){
-    resultado = "Carros médios"
-}else if (preco > 300 && preco <= 400) {
-    resultado = "Carros luxuosos"
-} else {
-    resultado = "Eike batista"
+//var comentarios: [String] = []
+//comentarios.append("Gostei da foto...muito legal")
+//comentarios.append("Ficou muito bonita nessa foto")
+//comentarios.append("Que legal sua viagem")
+//
+//for var comentario in comentarios {
+//    print(comentario)
+//}
+//
+//var contador = 0
+//
+//while contador < 6 {
+//    print(contador)
+//    contador += 1
+//}
+
+//var contador = 0
+//
+//repeat {
+//
+//    print(contador)
+//
+//    contador += 1
+//
+//}while contador < 6
+
+//Funções
+//func multiplicar(numero1: Int, numero2: Int) -> Int {
+//
+//    return (numero1 * numero2)
+//}
+//
+//var num: Int = multiplicar(numero1: 2, numero2: 3)
+//
+//num += 2
+//
+//print(num)
+
+//Desafio
+
+//func descobrirAnoNascimento(ano: Int) -> Int {
+//    return 2020 - ano
+//}
+//
+//var ano = descobrirAnoNascimento(ano: 1993)
+//print(ano)
+
+//Opcionais
+
+//var valor1: Int = 0
+//var valor2: Int?
+//var total: Int = 0
+//
+//if let valor2Testado = valor2 {
+//    total = valor1 + valor2Testado
+//}
+//
+//print(total)
+
+//Classes
+//
+//class Casa {
+//    // Atributos
+//    var cor: String
+//
+//    init (cor: String) {
+//        self.cor = cor
+//    }
+//
+//    //metodos -ações
+//    func getCor() -> String {
+//        return self.cor
+//    }
+//}
+//
+////Criar o objeto
+//var casa = Casa(cor: "Azul")
+//casa.getCor()
+//
+//var casa2 = Casa(cor: "Preto")
+//casa2.getCor()
+//
+
+//Desafio
+//class Cachorro {
+//    var cor: String
+//
+//    init(cor: String) {
+//        self.cor = cor
+//    }
+//
+//    func correr() -> String {
+//        return "Correu"
+//    }
+//
+//    func latir() -> String {
+//        return "Au"
+//    }
+//}
+//
+//var cachorro = Cachorro(cor: "Azul")
+//cachorro.correr()
+//cachorro.latir()
+
+//herança
+class Animal {
+    var cor = "marrom"
+    
+    func dormir() -> String {
+        return "dormir"
+    }
 }
 
-print(resultado)
+class Cachorro: Animal {
+    func latir() -> String {
+        return "au"
+    }
+}
+
+class Passaro: Animal {
+    func voar() -> String {
+        return "voar"
+    }
+}
+
+class Papagaio: Passaro {
+    func repetir() -> String {
+        return "repetir"
+    }
+}
+
+//criar objeto
+var cachorro = Cachorro()
+cachorro.cor
+cachorro.latir()
+
+var passaro = Passaro()
+passaro.cor
+passaro.voar()
+
+var papagaio = Papagaio()
+papagaio.cor
+papagaio.repetir()
